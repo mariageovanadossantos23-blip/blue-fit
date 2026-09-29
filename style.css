@@ -1,0 +1,424 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ===== CABEÇALHO ===== */
+header {
+    background-color: #071a2f;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00aaff;
+}
+
+/* ===== INÍCIO ===== */
+#inicio {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 8%;
+    background: linear-gradient(
+        rgba(7, 26, 47, 0.9),
+        rgba(7, 26, 47, 0.9)
+    ),
+    url("img/academia.jpg");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #00aaff;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+    display: inline-block;
+    background-color: #00aaff;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0088cc;
+    transform: translateY(-3px);
+}
+
+/* ===== SEÇÕES ===== */
+section {
+    padding: 70px 8%;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+    color: #071a2f;
+}
+
+.titulo span {
+    color: #00aaff;
+}
+
+/* ===== SOBRE ===== */
+.sobre {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.sobre img {
+    width: 45%;
+    border-radius: 15px;
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #071a2f;
+}
+
+/* ===== SERVIÇOS ===== */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card .icone {
+    font-size: 45px;
+    color: #00aaff;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #071a2f;
+    margin-bottom: 10px;
+}
+
+/* ===== PLANOS ===== */
+.planos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.plano {
+    background-color: white;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.plano.destaque {
+    border: 3px solid #00aaff;
+}
+
+.plano h3 {
+    font-size: 25px;
+    color: #071a2f;
+}
+
+.preco {
+    font-size: 35px;
+    font-weight: bold;
+    color: #00aaff;
+    margin: 20px 0;
+}
+
+.plano ul {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.plano li {
+    margin: 10px 0;
+}
+
+/* ===== GALERIA ===== */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
+
+/* ===== CONTATO ===== */
+.contato {
+    background-color: #071a2f;
+    color: white;
+}
+
+.contato .titulo {
+    color: white;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: auto;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+.formulario textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario button {
+    border: none;
+    cursor: pointer;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #04101e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer span {
+    color: #00aaff;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+
+    .cards,
+    .planos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards,
+    .planos,
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .titulo {
+        font-size: 28px;
+
+    
+
+      .card,
+      .plano,
+      .sobre,
+  .galeria img {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.6s ease;
+}
+
+  .aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== TREINOS ===== */
+
+#treinos {
+    background-color: #f5f7fa;
+}
+
+#treinos .cards {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#treinos .card {
+    border-top: 4px solid #00aaff;
+}
+
+#treinos .card p {
+    color: #666;
+    /* ===== PLANOS ===== */
+
+#planos {
+    background-color: white;
+}
+
+#planos .planos {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.plano {
+    transition: 0.3s;
+}
+
+.plano:hover {
+    transform: translateY(-10px);
+}
+
+.plano.destaque {
+    transform: scale(1.05);
+}
+
+.plano.destaque:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.preco small {
+    font-size: 14px;
+    font-weight: normal;
+    color: #777;
+    /* ===== GALERIA ===== */
+
+#galeria {
+    background-color: #f5f7fa;
+}
+
+#galeria .galeria {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#galeria .galeria img {
+    cursor: pointer;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+#galeria .galeria img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+}
+}
+    }
+}
